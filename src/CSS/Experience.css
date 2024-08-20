@@ -1,0 +1,63 @@
+/* experience.css */
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; /* Adjust or remove if it impacts layout */
+  gap: 30px; /* Space between each -box */
+  padding-bottom: 60px; /* Add padding at the bottom to prevent overlap with footer */
+}
+
+.experience-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  width: 80%;
+  max-width: 800px;
+  box-sizing: border-box;
+  flex-direction: row;
+  gap: 30px;
+  height: auto; /* Remove height: 100% to allow flexible height */
+}
+
+.experience-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0;
+  transform: scale(1); /* Zoom in by 20% */;
+}
+.experience-image-zoom {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0;
+  transform: scale(1.7); /* Zoom in by 20% */;
+}
+
+.experience-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .experience-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-image {
+    width: 40vw;
+    max-width: 300px;
+  }
+}

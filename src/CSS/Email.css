@@ -1,0 +1,9 @@
+.email-container {
+    display: flex;
+  }
+  
+  @media (max-width: 500px) {
+    .email-container {
+      display: none; /* Hide the email when screen width is 500px or less */
+    }
+  }

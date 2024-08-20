@@ -1,0 +1,53 @@
+/* budo.css */
+
+.budo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px; /* Remove default margin */
+    padding-bottom: 60px; /* Add padding at the bottom to prevent overlap with footer */
+  }
+  
+  .budo-box {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated shadow color */
+    text-align: justify;
+    width: 80%;
+    height: 100%;
+    max-width: 1500px; /* Adjust as needed */
+    max-height: 1500px; /* Adjust as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    flex-direction: row; /* Ensure image and text are side by side */
+    gap: 30px; /* Space between image and text */
+  }
+  
+  .budo-image {
+    width: 400px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  .budo-text {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically */
+  }
+
+  @media (max-width: 768px) {
+    .budo-box {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+      text-align: center; /* Center text when stacked */
+    }
+  
+    .budo-image {
+      width: 40vw; /* Increase width on smaller screens */
+      max-width: 300px; /* Ensure the image does not exceed this width */
+    }
+  }

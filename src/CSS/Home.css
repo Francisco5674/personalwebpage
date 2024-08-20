@@ -1,0 +1,21 @@
+/* Home.css */
+
+.home {
+    display: flex;
+    flex-direction: column; /* Stack name and subtitle vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* White text color */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding around the content */
+  }
+  
+  .home h1 {
+    font-size: 4rem; /* Large font size for the name */
+    margin: 200px; /* Remove default margin */
+  }
+  
+  .home h2 {
+    font-size: 2rem; /* Smaller font size for the subtitle */
+    margin-top: -100px; /* Space between name and subtitle */
+  }

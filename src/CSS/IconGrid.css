@@ -1,0 +1,17 @@
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between icons */
+    justify-items: center; /* Center icons in their grid cells */
+    padding: 20px;
+  }
+  
+  .icon-link {
+    font-size: 40px; /* Size of the icons */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .icon-link:hover {
+    color: #4CAF50; /* Change color on hover */
+  }
