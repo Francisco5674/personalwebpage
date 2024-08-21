@@ -84,6 +84,33 @@ function Experience() {
         </div>
       </div>
       <div className='experience-box'>
+        <img src='sura.jpg' alt='Your Name' className='experience-image' />
+        <div className='experience-text'>
+            <center>
+            <h4>Sura Chile</h4>
+            <p>2022</p>
+            <p>Working on the user’s personal web for SURA financial Assets</p>
+            <table class="fancy-table">
+              <tr>
+                <th colspan="2">Relevant Skills</th>
+              </tr>
+              <tr>
+                <td>Problem solving</td>
+                <td>Web development</td>
+              </tr>
+              <tr>
+                <td>Python Automatization</td>
+                <td>User service</td>
+              </tr>
+              <tr>
+                <td>Scrum </td>
+                <td>Agile methodologies</td>
+              </tr>
+            </table>
+            </center>
+        </div>
+      </div>
+      <div className='experience-box'>
         <img src='PUC.png' alt='Your Name' className='experience-image-zoom' />
         <div className='experience-text'>
             <center>
