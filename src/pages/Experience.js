@@ -11,7 +11,7 @@ function Experience() {
             <center>
             <h4>University of California Berkeley, Michigan State University, Federal Reserve Bank of Chicago</h4>
             <p>2024</p>
-            <p>Research assitant, adminstrating Data bases using SSH connection to a remote server and Demand estimation</p>
+            <p>Research assistant, administrating Data bases using SSH connection to a remote server and Demand estimation.</p>
             <table class="fancy-table">
               <tr>
                 <th colspan="2">Relevant Skills</th>
