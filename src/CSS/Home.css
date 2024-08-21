@@ -19,3 +19,29 @@
     font-size: 2rem; /* Smaller font size for the subtitle */
     margin-top: -100px; /* Space between name and subtitle */
   }
+
+  /* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 3rem; /* Smaller font size for the name on smaller screens */
+    margin: 100px 0; /* Adjust margins */
+  }
+
+  .home h2 {
+    font-size: 1.5rem; /* Smaller font size for the subtitle */
+    margin-top: -50px; /* Adjust space between name and subtitle */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 2.5rem; /* Even smaller font size for the name on mobile devices */
+    margin: 50px 0; /* Adjust margins further */
+  }
+
+  .home h2 {
+    font-size: 1.2rem; /* Even smaller font size for the subtitle */
+    margin-top: -25px; /* Adjust space between name and subtitle */
+  }
+}

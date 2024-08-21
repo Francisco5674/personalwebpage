@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer style={footerStyle}>
       <div style={containerStyle}>
-        <div className="email-container" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+        <div className="email-container">
           <MdEmail size={25} /> {/* Email icon */}
           <span>francisco.fuentes@alumni.uc.cl</span>
         </div>

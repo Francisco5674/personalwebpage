@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Nav';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+// import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Aboutme from './pages/Aboutme';
@@ -10,7 +10,8 @@ import Background from './components/Background';
 import Footer from './components/Footer';
 import Budo from './pages/Budo';
 
-function App() {
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('/');
 
   const images = [
     'coding-wallpaper.png',
@@ -19,22 +20,31 @@ function App() {
     // Add more image URLs as needed
   ];
 
+  const renderPage = () => {
+    switch (currentPage) {
+      case '/':
+        return <Home />;
+      case '/aboutme':
+        return <Aboutme />;
+      case '/experience':
+        return <Experience />;
+      case '/education':
+        return <Education />;
+      case '/budo':
+        return <Budo />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <>
       <Background images={images} />
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/'  element={<Home />} />
-          <Route path='/aboutme'  element={<Aboutme />} />
-          <Route path='/experience' element={<Experience />} />
-          <Route path='/education' element={<Education />} />
-          <Route path='/budo' element={<Budo />} />
-        </Routes>
-      </Router>
-      <Footer/>
+      <Navbar navigate={setCurrentPage} />
+      {renderPage()}
+      <Footer />
     </>
   );
-}
+};
 
 export default App;

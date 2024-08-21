@@ -1,9 +1,13 @@
+/* Default styling for the email container */
 .email-container {
-    display: flex;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hide the email container on small screens */
+@media (max-width: 850px) {
+  .email-container {
+    display: none;
   }
-  
-  @media (max-width: 500px) {
-    .email-container {
-      display: none; /* Hide the email when screen width is 500px or less */
-    }
-  }
+}
